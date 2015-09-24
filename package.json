@@ -1,0 +1,32 @@
+{
+  "name": "wizard",
+  "version": "1.0.0",
+  "description": "Image processing middleware for express backed by GraphicsMagick",
+  "main": "index.js",
+  "scripts": {
+    "test": "babel-node test/index.js",
+    "watch": "DEBUG=gm nodemon --exec babel-node server.js"
+  },
+  "keywords": [
+    "images",
+    "image-processing",
+    "express",
+    "graphicsmagick"
+  ],
+  "author": "Simen Brekken <simen@unfold.no>",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.2.4",
+    "express": "^4.13.3",
+    "gm": "^1.20.0"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-eslint": "^4.1.3",
+    "eslint": "^1.5.1",
+    "eslint-config-airbnb": "0.0.8",
+    "eslint-plugin-react": "^3.4.2",
+    "supertest": "^1.1.0",
+    "tape": "^4.2.0"
+  }
+}
